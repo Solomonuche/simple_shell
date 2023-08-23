@@ -1,7 +1,7 @@
 #include "shell.h"
 
 /**
- * _putchar - a function that prints a character to stdout
+ * _putchar - writes the character c to stdout
  * @c: The character to print
  *
  * Return: On success 1.
@@ -12,59 +12,56 @@ int _putchar(char c)
 	return (write(1, &c, 1));
 }
 /**
- * _strncpy - a custum strncpy function that copies n number of a string
- * @dest: destination string
- *  @src: source string
- * @n: number of bytes to be copied
- *
- * Return: (char)
+ * _strncpy - copie a string
+ * @dest:char
+ *  @src:char
+ * @n:int
+ * Return:char
  */
 
 char *_strncpy(char *dest, char *src, int n)
 {
-	int i;
+int i;
 
-	i = 0;
+i = 0;
 	while (i < n && *(src + i))
 	{
-		*(dest + i) = *(src + i);
-		i++;
+	*(dest + i) = *(src + i);
+	i++;
 	}
 	while (i < n)
 	{
-		*(dest + i) = '\0';
-		i++;
+	*(dest + i) = '\0';
+	i++;
 	}
 	return (dest);
 }
 
 /**
- * _strlen - a function that returns the lenght of a string
- * @s: sring
- *
- * Return: (int)
+ * _strlen - lenght of string
+ * @s:char
+ * Return:int
  */
 
 int _strlen(char *s)
 {
 	int i;
 
-	for (i = 0; s[i] != '\0'; i++)
-	{
-		continue;
-	}
-	return (i);
+		for (i = 0; s[i] != '\0'; i++)
+		{
+			continue;
+		}
+return (i);
 }
 
 /**
- * _atoi - a function that converts a string to an integer
+ * _atoi - convert to a int
  * @s:string
- *
  * Return:int
  */
 int _atoi(char *s)
 {
-	int i, j, n, x;
+int i, j, n, x;
 
 	i = n = 0;
 	x = 1;
@@ -95,8 +92,6 @@ void _puts(char *str)
 	{
 		_putchar(str[i]);
 	}
-	_putchar('\n');
-	{
-		return;
-	}
+_putchar('\n');
+return;
 }

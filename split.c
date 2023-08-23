@@ -3,7 +3,7 @@
 #define SPARE " \t\r\n\a"
 
 /**
- * split_command - a function that splits lines into tokens
+ * split_command - split lines into tokens
  * @line: line to be splited
  *
  * Return: array of tokens

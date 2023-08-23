@@ -2,7 +2,7 @@
 #include "shell.h"
 
 /**
-* _getline - a custom getline function that Reads The Input By User From Stdin
+* _getline - Read The Input By User From Stdin
 * Return: Input
 */
 char *_getline()

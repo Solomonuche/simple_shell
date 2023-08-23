@@ -1,7 +1,7 @@
 #include "shell.h"
 
 /**
- * path_cmd -  a function that Searches In $PATH For Excutable Command
+ * path_cmd -  Search In $PATH For Excutable Command
  * @cmd: Parsed Input
  * Return: 1  Failure  0  Success.
  */
