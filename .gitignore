@@ -1,0 +1,4 @@
+# Ignore test suite
+TEST_SUITES
+allowed_functions
+runchecker.bash
